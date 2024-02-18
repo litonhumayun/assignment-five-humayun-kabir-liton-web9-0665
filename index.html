@@ -4,26 +4,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Efficacy Tours</title>
+    <!--Tailwind CSS and DaisyUI CDN Link-->   
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Custom CSS Link-->
+    <link rel="stylesheet" href="styles/styles.css">
+    <!--Google Fonts Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
         <header>
             <nav>
-
+                <div class="navbar bg-base-100">
+                    <div class="navbar-start">
+                      <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                          <li><a>Home</a></li>
+                          <li><a>About</a></li>
+                          <li><a>Destination</a></li>
+                          <li><a>Search</a></li>
+                        </ul>
+                      </div>
+                      <a class="btn btn-ghost text-xl">Efficacy Tours</a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                      <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                      </ul>
+                    </div>
+                    <div class="navbar-end">
+                      <a class="btn">Button</a>
+                    </div>
+                  </div>
             </nav>
         </header>
         <section class="hero-banner">
-
+            <div class="hero min-h-screen" style="background-image: url(images/banner.png);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-bold">End-to-End Travel With <br> Efficacy Tours</h1>
+                    <p class="mb-5">Efficacy Tours offers reliable, comfortable bus service, catering to diverse needs. Experience convenience, 
+                        safety, and affordability with our routes. Book your journey today!</p>
+                    <button class="btn btn-primary">Get Started</button>
+                  </div>
+                </div>
+              </div>
+              <div class="flex">
+                <div class="card lg:card-side bg-base-100 shadow-xl">
+                    <figure><img src="images/people.png" alt="Album"/></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">500K+</h2>
+                      <p>Registered users</p>
+                    </div>
+                  </div>
+                  <div class="card lg:card-side bg-base-100 shadow-xl">
+                    <figure><img src="images/ticket-cupon.png" alt="Album"/></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">1.7 lacks</h2>
+                      <p>Tickets sold</p>
+                    </div>
+                  </div>
+                  <div class="card lg:card-side bg-base-100 shadow-xl">
+                    <figure><img src="images/stoppage.png" alt="Album"/></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">80K+</h2>
+                      <p>Rental partners</p>
+                    </div>
+                  </div>
+              </div>
         </section>
         <section class="offers">
-
+            <h2>Best offers for you</h2>
+            <div class="flex">
+                <div>
+                    <div>
+                        <h2>15% OFF</h2>
+                        <h3> on your next purchase</h3>
+                        <p>use by January 2024</p>
+                    </div>
+                    <div><img src="images/cupon-devider.png" alt=""></div>
+                    <div>
+                        <h2>NEW15</h2>
+                        <h3>Coupon Code</h3>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h2>20% OFF</h2>
+                        <h3> on your next purchase</h3>
+                        <p>use by January 2024</p>
+                    </div>
+                    <div><img src="images/cupon-devider.png" alt=""></div>
+                    <div>
+                        <h2>Couple 20</h2>
+                        <h3>Coupon Code</h3>
+                    </div>
+                </div>
+            </div>
+            <button>See All Offers</button>
         </section>
         <section class="ticketing">
-
+            <h1>Efficacy Tours</h1>
+            <p>Yes, you can run unit tests and view the results directly within the app. The integrated <br>testing features allow for a streamlined .</p>
         </section>
-        <footer>
-            
-        </footer>
+        <footer class="footer p-10 bg-base-200 text-base-content flex">
+            <div>
+                <h2 class="footer-title">Services</h2> 
+                <p>P-Ticket is a digital platform to make your <br>daily commuting better.</p>
+            </div>
+            <div>
+                <p>Download our app</p>
+                <div class="flex">
+                    <div>
+                        <img src="images/playstore.png" alt="">
+                    </div>
+                    <div>
+                        <p>GET IT ON</p>
+                        <p>Google Play</p>
+                    </div>
+                </div>
+            </div>
+          </footer> 
+          <footer class="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
+            <aside class="items-center grid-flow-col">
+                <p>@All Rights Reserved, Efficacy Tours Limited.2024</p>
+            </aside> 
+            <nav class="md:place-self-center md:justify-self-end">
+              <div class="grid grid-flow-col gap-4">
+                <a>Terms & condition</a>
+                <a>Return & refund policy</a>
+                <a>Privacy policy</a>
+              </div>
+            </nav>
+          </footer>
     </main>
 </body>
 </html>
