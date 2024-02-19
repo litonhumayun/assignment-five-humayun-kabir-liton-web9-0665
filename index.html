@@ -177,7 +177,7 @@
               </div>
               <div class="flex flex-col justify-center items-center ml-10">
                 <img src="images/fare.png" alt="">
-                <h1>550 Taka</h1>
+                <h1> <span id="price">550</span> Taka</h1>
                 <p>per seat</p>
               </div>
             </div>
@@ -199,19 +199,60 @@
                 <p>Selected</p>
               </div>
             </div>
+            <div class="hidden">You have selected <span id="count"></span> seats.</div>
             <button class="btn my-5 flex justify-end "><img src="images/Vector.png" alt=""></button>
             <div>
-              <div class="grid grid-cols-5">
-                <h5 class="pl-10 py-6">A</h5> <h5 class="px-10 py-6">A1</h5> <h5 class="px-10 py-6 mr-8">A2</h5> <h5 class="px-10 py-6">A3</h5> <h5 class="px-10 py-6">A4</h5> 
-                <h5 class="pl-10 py-6">B</h5> <h5 class="px-10 py-6">B1</h5> <h5 class="px-10 py-6">B2</h5> <h5 class="px-10 py-6">B3</h5> <h5 class="px-10 py-6">B4</h5>
-                <h5 class="pl-10 py-6">C</h5> <h5 class="px-10 py-6">C1</h5> <h5 class="px-10 py-6">C2</h5> <h5 class="px-10 py-6">C3</h5> <h5 class="px-10 py-6">C4</h5>
-                <h5 class="pl-10 py-6">D</h5> <h5 class="px-10 py-6">D1</h5> <h5 class="px-10 py-6">D2</h5> <h5 class="px-10 py-6">D3</h5> <h5 class="px-10 py-6">D4</h5>
-                <h5 class="pl-10 py-6">E</h5> <h5 class="px-10 py-6">E1</h5> <h5 class="px-10 py-6">E2</h5> <h5 class="px-10 py-6">E3</h5> <h5 class="px-10 py-6">E4</h5>
-                <h5 class="pl-10 py-6">F</h5> <h5 class="px-10 py-6">F1</h5> <h5 class="px-10 py-6">F2</h5> <h5 class="px-10 py-6">F3</h5> <h5 class="px-10 py-6">F4</h5>
-                <h5 class="pl-10 py-6">G</h5> <h5 class="px-10 py-6">G1</h5> <h5 class="px-10 py-6">G2</h5> <h5 class="px-10 py-6">G3</h5> <h5 class="px-10 py-6">G4</h5>
-                <h5 class="pl-10 py-6">H</h5> <h5 class="px-10 py-6">H1</h5> <h5 class="px-10 py-6">H2</h5> <h5 class="px-10 py-6">H3</h5> <h5 class="px-10 py-6">H4</h5>
-                <h5 class="pl-10 py-6">I</h5> <h5 class="px-10 py-6">I1</h5> <h5 class="px-10 py-6">I2</h5> <h5 class="px-10 py-6">I3</h5> <h5 class="px-10 py-6">I4</h5>
-                <h5 class="pl-10 py-6">J</h5> <h5 class="px-10 py-6">J1</h5> <h5 class="px-10 py-6">J2</h5> <h5 class="px-10 py-6">J3</h5> <h5 class="px-10 py-6">J4</h5>
+              <div class="ticket-container grid grid-cols-5">
+                <h5 class="pl-8 py-4">A</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">A1</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">A2</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">A3</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">A4</h5> 
+                <h5 class="pl-8 py-5">B</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">B1</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">B2</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">B3</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">B4</h5>
+                <h5 class="pl-8 py-5">C</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">C1</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">C2</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">C3</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">C4</h5>
+                <h5 class="pl-8 py-5">D</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">D1</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">D2</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">D3</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">D4</h5>
+                <h5 class="pl-8 py-5">E</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">E1</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">E2</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">E3</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">E4</h5>
+                <h5 class="pl-8 py-5">F</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">F1</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">F2</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">F3</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">F4</h5>
+                <h5 class="pl-8 py-5">G</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">G1</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">G2</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">G3</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">G4</h5>
+                <h5 class="pl-8 py-5">H</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">H1</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">H2</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">H3</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">H4</h5>
+                <h5 class="pl-8 py-5">I</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">I1</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">I2</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">I3</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">I4</h5>
+                <h5 class="pl-8 py-5">J</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">J1</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">J2</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">J3</h5> 
+                <h5 class="px-8 py-5 bg-green-100 m-2 seat">J4</h5>
               </div>
             </div>
           </div>
@@ -267,11 +308,11 @@
            
               <div class="flex justify-around">
                 <p>Total Price</p>
-                <p>BDT 1100</p>
+                <p id="total">0</p>
               </div>
               <form action="" class="flex my-5">
-                <input type="text" name="" id="" class="border-4 border-green-400 w-full">
-                <button type="submit" class="btn bg-green-600">Apply Coupon</button>
+                <input type="text" name="" id="coupon" class="border-4 border-green-400 w-full">
+                <button type="submit" id="apply-coupon" class="btn bg-green-600 disabled">Apply Coupon</button>
               </form>
               <div class="flex justify-around">
                 <p>Grand Total</p>
@@ -328,5 +369,6 @@
       </nav>
       </div>
     </footer>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
