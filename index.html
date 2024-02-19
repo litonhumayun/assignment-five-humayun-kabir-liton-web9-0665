@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
+    <main class="max-w-[1171px] m-auto">
         <header>
             <nav>
                 <div class="navbar bg-base-100">
@@ -31,7 +31,7 @@
                           <li><a>Search</a></li>
                         </ul>
                       </div>
-                      <a class="btn btn-ghost text-xl">Efficacy Tours</a>
+                      <a class="btn btn-ghost text-xl text-black">Efficacy Tours</a>
                     </div>
                     <div class="navbar-center hidden lg:flex">
                       <ul class="menu menu-horizontal px-1">
@@ -42,7 +42,10 @@
                       </ul>
                     </div>
                     <div class="navbar-end">
-                      <a class="btn">Button</a>
+                      <a class="btn bg-green-200">
+                        <p class="text-green-700">Bus</p>
+                        <img src="images/bus-icon.png" alt="">
+                      </a>
                     </div>
                   </div>
             </nav>
@@ -52,29 +55,29 @@
                 <div class="hero-overlay bg-opacity-60"></div>
                 <div class="hero-content text-center text-neutral-content">
                   <div class="max-w-md">
-                    <h1 class="mb-5 text-5xl font-bold">End-to-End Travel With <br> Efficacy Tours</h1>
-                    <p class="mb-5">Efficacy Tours offers reliable, comfortable bus service, catering to diverse needs. Experience convenience, 
-                        safety, and affordability with our routes. Book your journey today!</p>
-                    <button class="btn btn-primary">Get Started</button>
+                    <h1 class="mb-5 text-4xl font-extrabold">End-to-End Travel With <br> Efficacy Tours</h1>
+                    <p class="mb-5">We offer reliable, comfortable bus service, catering to diverse needs, convenient experience, 
+                        safety, and affordability.</p>
+                    <button class="btn btn-primary bg-green-600 text-black hover:text-white">Buy Tickets</button>
                   </div>
                 </div>
               </div>
-              <div class="flex">
-                <div class="card lg:card-side bg-base-100 shadow-xl">
+              <div class="flex justify-center gap-6 -mt-16">
+                <div class="card lg:card-side bg-base-100 shadow-xl border-b-4 border-green-400">
                     <figure><img src="images/people.png" alt="Album"/></figure>
                     <div class="card-body">
                       <h2 class="card-title">500K+</h2>
                       <p>Registered users</p>
                     </div>
                   </div>
-                  <div class="card lg:card-side bg-base-100 shadow-xl">
+                  <div class="card lg:card-side bg-base-100 shadow-xl border-b-4 border-green-400">
                     <figure><img src="images/ticket-cupon.png" alt="Album"/></figure>
                     <div class="card-body">
                       <h2 class="card-title">1.7 lacks</h2>
                       <p>Tickets sold</p>
                     </div>
                   </div>
-                  <div class="card lg:card-side bg-base-100 shadow-xl">
+                  <div class="card lg:card-side bg-base-100 shadow-xl border-b-4 border-green-400">
                     <figure><img src="images/stoppage.png" alt="Album"/></figure>
                     <div class="card-body">
                       <h2 class="card-title">80K+</h2>
@@ -83,60 +86,60 @@
                   </div>
               </div>
         </section>
-        <section class="offers">
-            <h2>Best offers for you</h2>
-            <div class="flex">
-                <div>
-                    <div>
+        <section class="offers mt-20">
+            <h2 class="text-center mb-4">Best offers for you</h2>
+            <div class="flex justify-center gap-6">
+                <div class="flex bg-[#FFBF0F]">
+                    <div class="p-14">
                         <h2>15% OFF</h2>
                         <h3> on your next purchase</h3>
                         <p>use by January 2024</p>
                     </div>
                     <div><img src="images/cupon-devider.png" alt=""></div>
-                    <div>
+                    <div class="p-14">
                         <h2>NEW15</h2>
                         <h3>Coupon Code</h3>
                     </div>
                 </div>
-                <div>
-                    <div>
+                <div class="flex bg-[#F78C9C]">
+                    <div class="p-14">
                         <h2>20% OFF</h2>
                         <h3> on your next purchase</h3>
                         <p>use by January 2024</p>
                     </div>
                     <div><img src="images/cupon-devider.png" alt=""></div>
-                    <div>
+                    <div class="p-14">
                         <h2>Couple 20</h2>
                         <h3>Coupon Code</h3>
                     </div>
                 </div>
             </div>
-            <button>See All Offers</button>
+            <button class="btn my-10 flex justify-center bg-white border-green-400 hover:text-white-500 text-green-700 hover:bg-red-500">See All Offers</button>
         </section>
-        <section class="ticketing">
+        <section class="ticketing text-center items-center">
           <div>
             <h1>Efficacy Tours</h1>
-            <p>Yes, you can run unit tests and view the results directly within the app. The integrated <br>testing features allow for a streamlined .</p>
+            <p class="mb-10">Yes, you can run unit tests and view the results directly within the app. The integrated <br>testing features allow for a streamlined .</p>
             <div class="flex">
-              <div>
-                <div class="flex">
-                  <div class="flex">
+              <div class="w-full max-w-[810px]">
+                <div class="flex justify-between my-5">
+                  <div class="flex justify-start gap-2">
                     <div>
                       <img src="images/bus-logo.png" alt="">
                     </div>
-                    <div>
-                      <h2>Greenline Paribahan</h2>
+                    <div class="flex flex-col justify-start">
+                      <h2 class=" flex justify-start">Greenline Paribahan</h2>
                       <p>Coach-009-WEB ! AC_Business</p>
                     </div>
                   </div>
-                  <div class="flex">
+                  <div class="flex bg-green-200 p-2">
                     <div><img src="images/seat-green.png" alt=""></div>
                     <div>
                       <p>40 Seats left</p>
                     </div>
                   </div>
                 </div>
-                <div class="flex">
+                <div class="flex justify-between">
                   <div>
                     <p>Route</p>
                   </div>
@@ -144,7 +147,9 @@
                     <p>Dhaka-Sylhet</p>
                   </div>
                 </div>
-                <div class="flex">
+                <br>
+                <hr>
+                <div class="flex justify-between my-5">
                   <div>
                     <p>Departure Time</p>
                   </div>
@@ -152,22 +157,25 @@
                     <p>9.00 PM</p>
                   </div>
                 </div>
-                <div class="flex">
+                
+                <hr>
+                <br>
+                <div class="flex justify-center gap-2">
                   <div>
-                    <p>Boarding Point - Laxmipur</p>
+                    <button class="btn">Boarding Point - Laxmipur</button>
                   </div>
                   <div>
-                    <p>Dropping Point - Bogura</p>
+                    <button class="btn">Dropping Point - Bogura</button>
                   </div>
                   <div>
-                    <p>Est. Time - 11 Hour</p>
+                    <button class="btn">Est. Time - 11 Hour</button>
                   </div>
                 </div>
               </div>
               <div>
                 <img src="images/info-devider.png" alt="">
               </div>
-              <div>
+              <div class="flex flex-col justify-center items-center ml-10">
                 <img src="images/fare.png" alt="">
                 <h1>550 Taka</h1>
                 <p>per seat</p>
@@ -176,11 +184,12 @@
           </div>
         </section>
         <section class="seat-selection flex">
-          <div class="flex flex-col">
-            <div>
+          <div class="flex flex-col w-full max-w-[650px]">
+            <div class="my-5">
               <p>Select Your Seat</p>
             </div>
-            <div class="flex">
+            <hr>
+            <div class="flex justify-between mt-5">
               <div class="flex">
                 <img src="images/seat-gray.png" alt="">
                 <p>Available</p>
@@ -190,31 +199,33 @@
                 <p>Selected</p>
               </div>
             </div>
-            <div>
-              <img src="images/Vector.png" alt="">
-            </div>
+            <button class="btn my-5 flex justify-end "><img src="images/Vector.png" alt=""></button>
             <div>
               <div class="grid grid-cols-5">
-                <h5>A</h5> <h5>A1</h5> <h5>A2</h5> <h5>A3</h5> <h5>A4</h5> 
-                <h5>B</h5> <h5>B1</h5> <h5>B2</h5> <h5>B3</h5> <h5>B4</h5>
-                <h5>C</h5><h5>C1</h5> <h5>C2</h5> <h5>C3</h5> <h5>C4</h5>
-                <h5>D</h5><h5>D1</h5> <h5>D2</h5> <h5>D3</h5> <h5>D4</h5>
-                <h5>E</h5><h5>E1</h5> <h5>E2</h5> <h5>E3</h5> <h5>E4</h5>
-                <h5>F</h5><h5>F1</h5> <h5>F2</h5> <h5>F3</h5> <h5>F4</h5>
-                <h5>G</h5><h5>G1</h5> <h5>G2</h5> <h5>G3</h5> <h5>G4</h5>
-                <h5>H</h5><h5>H1</h5> <h5>H2</h5> <h5>H3</h5> <h5>H4</h5>
-                <h5>I</h5><h5>I1</h5> <h5>I2</h5> <h5>I3</h5> <h5>I4</h5>
-                <h5>J</h5><h5>J1</h5> <h5>J2</h5> <h5>J3</h5> <h5>J4</h5>
+                <h5 class="pl-10 py-6">A</h5> <h5 class="px-10 py-6">A1</h5> <h5 class="px-10 py-6 mr-8">A2</h5> <h5 class="px-10 py-6">A3</h5> <h5 class="px-10 py-6">A4</h5> 
+                <h5 class="pl-10 py-6">B</h5> <h5 class="px-10 py-6">B1</h5> <h5 class="px-10 py-6">B2</h5> <h5 class="px-10 py-6">B3</h5> <h5 class="px-10 py-6">B4</h5>
+                <h5 class="pl-10 py-6">C</h5> <h5 class="px-10 py-6">C1</h5> <h5 class="px-10 py-6">C2</h5> <h5 class="px-10 py-6">C3</h5> <h5 class="px-10 py-6">C4</h5>
+                <h5 class="pl-10 py-6">D</h5> <h5 class="px-10 py-6">D1</h5> <h5 class="px-10 py-6">D2</h5> <h5 class="px-10 py-6">D3</h5> <h5 class="px-10 py-6">D4</h5>
+                <h5 class="pl-10 py-6">E</h5> <h5 class="px-10 py-6">E1</h5> <h5 class="px-10 py-6">E2</h5> <h5 class="px-10 py-6">E3</h5> <h5 class="px-10 py-6">E4</h5>
+                <h5 class="pl-10 py-6">F</h5> <h5 class="px-10 py-6">F1</h5> <h5 class="px-10 py-6">F2</h5> <h5 class="px-10 py-6">F3</h5> <h5 class="px-10 py-6">F4</h5>
+                <h5 class="pl-10 py-6">G</h5> <h5 class="px-10 py-6">G1</h5> <h5 class="px-10 py-6">G2</h5> <h5 class="px-10 py-6">G3</h5> <h5 class="px-10 py-6">G4</h5>
+                <h5 class="pl-10 py-6">H</h5> <h5 class="px-10 py-6">H1</h5> <h5 class="px-10 py-6">H2</h5> <h5 class="px-10 py-6">H3</h5> <h5 class="px-10 py-6">H4</h5>
+                <h5 class="pl-10 py-6">I</h5> <h5 class="px-10 py-6">I1</h5> <h5 class="px-10 py-6">I2</h5> <h5 class="px-10 py-6">I3</h5> <h5 class="px-10 py-6">I4</h5>
+                <h5 class="pl-10 py-6">J</h5> <h5 class="px-10 py-6">J1</h5> <h5 class="px-10 py-6">J2</h5> <h5 class="px-10 py-6">J3</h5> <h5 class="px-10 py-6">J4</h5>
               </div>
             </div>
           </div>
           <div>
-            <div>
+            <div class="divider lg:divider-horizontal"></div> 
+          </div>
+          <div class="w-full max-w-[650px]">
+            <div class="my-5">
               <p>Select Your Seat</p>
             </div>
+            <hr>
             <div>
               <div class="overflow-x-auto">
-                <table class="table">
+                <table class="table mt-10">
                   <!-- head -->
                   <thead>
                     <tr>
@@ -250,56 +261,72 @@
                     </tr>
                   </tbody>
                 </table>
+                <hr>
               </div>
             </div>
+           
+              <div class="flex justify-around">
+                <p>Total Price</p>
+                <p>BDT 1100</p>
+              </div>
+              <form action="" class="flex my-5">
+                <input type="text" name="" id="" class="border-4 border-green-400 w-full">
+                <button type="submit" class="btn bg-green-600">Apply Coupon</button>
+              </form>
+              <div class="flex justify-around">
+                <p>Grand Total</p>
+                <p>BDT 1100</p>
+              </div>
+            
             <div>
-              <form action="" class="flex flex-col">
-                <label for="">Passenger Name <sup>*</sup></label>
-                <input type="text" name="" id="" required>
-                <label for="">Phone Number <sup>*</sup></label>
-                <input type="number" name="" id="">
-                <label for="">Email ID</label>
-                <input type="email" name="" id="">
-                <label for=""></label>
-                <input type="button" value="Next">
+              <form action="" class="flex flex-col my-5">
+                <label for="" class="text-black my-3">Passenger Name <sup>*</sup></label>
+                <input type="text" name="" id="" placeholder="Enter your name" class="my-3">
+                <label for="" class="my-3">Phone Number <sup>*</sup></label>
+                <input type="number" name="" id="" placeholder="Enter your phone number" class="my-3">
+                <label for="" class="my-3">Email ID</label>
+                <input type="email" name="" id="" placeholder="Enter your email id" class="my-3">
+                <button class="btn bg-green-600">Next</button>
               </form>
             </div>
-            <div class="flex">
+            <div class="flex justify-around my-5">
               <p>Terms and Conditions</p>
               <p>Cancellation Policy</p>
             </div>
           </div>
         </section>
-        <footer class="footer p-10 bg-base-200 text-base-content flex">
-            <div>
-                <h2 class="footer-title">Services</h2> 
-                <p>P-Ticket is a digital platform to make your <br>daily commuting better.</p>
-            </div>
-            <div>
-                <p>Download our app</p>
-                <div class="flex">
-                    <div>
-                        <img src="images/playstore.png" alt="">
-                    </div>
-                    <div>
-                        <p>GET IT ON</p>
-                        <p>Google Play</p>
-                    </div>
-                </div>
-            </div>
-          </footer> 
-          <footer class="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
-            <aside class="items-center grid-flow-col">
-                <p>@All Rights Reserved, Efficacy Tours Limited.2024</p>
-            </aside> 
-            <nav class="md:place-self-center md:justify-self-end">
-              <div class="grid grid-flow-col gap-4">
-                <a>Terms & condition</a>
-                <a>Return & refund policy</a>
-                <a>Privacy policy</a>
-              </div>
-            </nav>
-          </footer>
     </main>
+    <footer class="">
+      <div class="footer p-10 bg-base-200 text-base-content flex justify-between bg-[#030712]">
+        <div>
+          <h2 class="footer-title text-white">Services</h2> 
+          <p class="text-white">P-Ticket is a digital platform to make your <br>daily commuting better.</p>
+      </div>
+      <div>
+          <p class="text-white">Download our app</p>
+          <div class="flex gap-2">
+              <div>
+                  <img src="images/playstore.png" alt="">
+              </div>
+              <div>
+                  <p class="text-white">GET IT ON</p>
+                  <p class="text-white">Google Play</p>
+              </div>
+          </div>
+      </div>
+      </div>
+      <div class="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300 bg-[#030712]">
+        <aside class="items-center grid-flow-col">
+          <p class="text-white">@All Rights Reserved, Efficacy Tours Limited.2024</p>
+      </aside> 
+      <nav class="md:place-self-center md:justify-self-end">
+        <div class="grid grid-flow-col gap-4">
+          <a class="text-white">Terms & condition</a>
+          <a class="text-white">Return & refund policy</a>
+          <a class="text-white">Privacy policy</a>
+        </div>
+      </nav>
+      </div>
+    </footer>
 </body>
 </html>
