@@ -23,3 +23,37 @@
   font-style: normal;
 }
 */
+
+#seats {
+  display: grid;
+  grid-template-columns: 5;
+}
+
+.seat {
+  margin: 5px;
+  background-color: gray;
+  border: 1px solid black;
+}
+
+.selected {
+  background-color: green;
+}
+
+.disabled {
+  background-color: red;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
