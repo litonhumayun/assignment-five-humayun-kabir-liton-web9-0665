@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main class="max-w-[1171px] m-auto">
+    <main class="max-w-full lg:max-w-[1171px] m-auto">
         <header>
             <nav>
                 <div class="navbar bg-base-100">
@@ -50,11 +50,11 @@
                   </div>
             </nav>
         </header>
-        <section class="hero-banner">
+        <section class="hero-banner lg:flex lg:flex-col">
             <div class="hero min-h-screen" style="background-image: url(images/banner.png);">
                 <div class="hero-overlay bg-opacity-60"></div>
                 <div class="hero-content text-center text-neutral-content">
-                  <div class="max-w-md">
+                  <div class="max-w-sm lg:max-w-md">
                     <h1 class="mb-5 text-4xl font-extrabold">End-to-End Travel With <br> Efficacy Tours</h1>
                     <p class="mb-5">We offer reliable, comfortable bus service, catering to diverse needs, convenient experience, 
                         safety, and affordability.</p>
@@ -86,42 +86,50 @@
                   </div>
               </div>
         </section>
-        <section class="offers mt-20">
-            <h2 class="text-center mb-4">Best offers for you</h2>
-            <div class="flex justify-center gap-6">
-                <div class="flex bg-[#FFBF0F]">
-                    <div class="p-14">
-                        <h2>15% OFF</h2>
-                        <h3> on your next purchase</h3>
-                        <p>use by January 2024</p>
-                    </div>
-                    <div><img src="images/cupon-devider.png" alt=""></div>
-                    <div class="p-14">
-                        <h2>NEW15</h2>
-                        <h3>Coupon Code</h3>
-                    </div>
-                </div>
-                <div class="flex bg-[#F78C9C]">
-                    <div class="p-14">
-                        <h2>20% OFF</h2>
-                        <h3> on your next purchase</h3>
-                        <p>use by January 2024</p>
-                    </div>
-                    <div><img src="images/cupon-devider.png" alt=""></div>
-                    <div class="p-14">
-                        <h2>Couple 20</h2>
-                        <h3>Coupon Code</h3>
-                    </div>
-                </div>
-            </div>
-            <button class="btn my-10 flex justify-center bg-white border-green-400 hover:text-white-500 text-green-700 hover:bg-red-500">See All Offers</button>
-        </section>
+
+        <section class="offers mt-4 lg:mt-20">
+          <h2 class="text-center mb-4">Best offers for you</h2>
+          <div class="flex flex-col lg:flex-row justify-center gap-6 p-auto">
+              <!-- Offer 1 -->
+              <div class="offer-card flex bg-[#FFBF0F] lg:w-1/2">
+                  <div class="p-4 lg:p-14">
+                      <h2>15% OFF</h2>
+                      <h3> on your next purchase</h3>
+                      <p>use by January 2024</p>
+                  </div>
+                  <div><img src="images/cupon-devider.png" alt=""></div>
+                  <div class="p-4 lg:p-14">
+                      <h2>NEW15</h2>
+                      <h3>Coupon Code</h3>
+                  </div>
+              </div>
+              <!-- Offer 2 -->
+              <div class="offer-card flex bg-[#F78C9C] lg:w-1/2">
+                  <div class="p-4 lg:p-14">
+                      <h2>20% OFF</h2>
+                      <h3> on your next purchase</h3>
+                      <p>use by January 2024</p>
+                  </div>
+                  <div><img src="images/cupon-devider.png" alt=""></div>
+                  <div class="p-4 lg:p-14">
+                      <h2>Couple 20</h2>
+                      <h3>Coupon Code</h3>
+                  </div>
+              </div>
+          </div>
+          <button class="btn my-10 flex justify-center bg-white border-green-400 hover:text-white-500 text-green-700 hover:bg-red-500 lg:mt-10">See All Offers</button>
+      </section>
+      
+      
+
+
+
         <section class="ticketing text-center items-center">
           <div>
             <h1>Efficacy Tours</h1>
             <p class="mb-10">Yes, you can run unit tests and view the results directly within the app. The integrated <br>testing features allow for a streamlined .</p>
-            <div class="flex">
-              <div class="w-full max-w-[810px]">
+            <div class="flex flex-col md:flex-row lg:flex-row">
+              <div class="w-full max-w-auto lg:max-w-[810px]">
                 <div class="flex justify-between my-5">
                   <div class="flex justify-start gap-2">
                     <div>
@@ -135,11 +143,12 @@
                   <div class="flex bg-green-200 p-2">
                     <div><img src="images/seat-green.png" alt=""></div>
                     <div class="info">
-                      <p><span id="availableSeats">40</span>Seats left</p>
+                      <p><span id="availableSeats"> 40 </span>Seats left</p>
                     </div>
 
                   </div>
                 </div>
+                <hr>
                 <div class="flex justify-between">
                   <div>
                     <p>Route</p>
@@ -173,7 +182,7 @@
                   </div>
                 </div>
               </div>
-              <div>
+              <div class="hidden lg:block">
                 <img src="images/info-devider.png" alt="">
               </div>
               <div class="flex flex-col justify-center items-center ml-10">
@@ -184,7 +193,10 @@
             </div>
           </div>
         </section>
-        <section class="seat-selection flex">
+
+
+<!--Ticket Selection Section-->
+        <section class="seat-selection flex flex-col md:flex-row lg:flex-row">
           <div class="flex flex-col w-full max-w-[650px]">
             <div class="my-5">
               <p>Select Your Seat</p>
@@ -261,7 +273,7 @@
           <div>
             <div class="divider lg:divider-horizontal"></div> 
           </div>
-          <div class="w-full max-w-[650px]">
+          <div class="max-w-full lg:max-w-[650px]">
             <div class="my-5">
               <p>Select Your Seat</p>
             </div>
@@ -287,14 +299,7 @@
                 <p>৳<span id="totalPrice">0</span></p>
               </div>
 
-<!--
-
-  <div id="couponSection">
-        <input type="text" id="couponInput" placeholder="Enter coupon code">
-        <button id="applyCoupon" disabled>Apply Coupon</button>
-    </div>
--->
-              <form action="" class="flex my-5" id="couponSection">
+              <form action="" class="flex flex-col lg:flex-row my-5 gap-2" id="couponSection">
                 <input type="text" name="" id="couponInput" class="border-4 border-green-400 w-full" placeholder="Enter Your Coupon Code">
                 <button type="submit" id="applyCoupon" class="btn bg-green-600" disabled>Apply Coupon</button>
               </form>
@@ -312,10 +317,24 @@
                 <input type="number" name="" id="" placeholder="Enter your phone number" class="my-3">
                 <label for="" class="my-3">Email ID</label>
                 <input type="email" name="" id="" placeholder="Enter your email id" class="my-3">
-                <button class="btn bg-green-600">Next</button>
               </form>
+              <!-- Open the modal using ID.showModal() method -->
+              <button class="btn bg-green-600 w-full" onclick="my_modal_1.showModal()">open modal</button>
+                <dialog id="my_modal_1" class="modal">
+                  <div class="modal-box">
+                    <h3 class="font-bold text-lg">Congratulations!</h3>
+                    <p class="py-4">You have successfully purchased your desired tickets. 
+                      Press ESC key or click the button below to close</p>
+                    <div class="modal-action">
+                      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Close</button>
+                      </form>
+                  </div>
+                </div>
+              </dialog>
             </div>
-            <div class="flex justify-around my-5">
+            <div class="flex flex-col lg:flex-row gap-2 justify-around my-5">
               <p>Terms and Conditions</p>
               <p>Cancellation Policy</p>
             </div>
@@ -323,7 +342,7 @@
         </section>
     </main>
     <footer class="">
-      <div class="footer p-10 bg-base-200 text-base-content flex justify-between bg-[#030712]">
+      <div class="footer p-10 bg-base-200 text-base-content flex flex-col lg:flex-row justify-between bg-[#030712]">
         <div>
           <h2 class="footer-title text-white">Services</h2> 
           <p class="text-white">P-Ticket is a digital platform to make your <br>daily commuting better.</p>
@@ -346,7 +365,7 @@
           <p class="text-white">@All Rights Reserved, Efficacy Tours Limited.2024</p>
       </aside> 
       <nav class="md:place-self-center md:justify-self-end">
-        <div class="grid grid-flow-col gap-4">
+        <div class="grid grid-flow-row lg:grid-flow-col gap-4">
           <a class="text-white">Terms & condition</a>
           <a class="text-white">Return & refund policy</a>
           <a class="text-white">Privacy policy</a>
