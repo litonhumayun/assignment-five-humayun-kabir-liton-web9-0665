@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 seat.classList.remove('selected');
                 selectedSeats.splice(seatIndex, 1);
             } else {
-                alert('You can only select up to 4 seats.');
+                alert('You have already selected 4 seats. You can buy 4 seats at most at a time.');
             }
             updateSelectedSeatsList();
             updateAvailableSeats();
@@ -72,9 +72,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function updateDiscountedPrice() {
-        if (selectedCoupleDiscount === 'couple20') {
+        if (selectedCoupleDiscount === 'couple 20') {
             discountedPrice = totalPrice * 0.8;
-        } else if (selectedCoupleDiscount === 'couple15') {
+        } else if (selectedCoupleDiscount === 'NEW15') {
             discountedPrice = totalPrice * 0.85;
         } else {
             discountedPrice = totalPrice;
@@ -84,13 +84,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     applyCouponButton.addEventListener('click', () => {
         const coupon = couponInput.value.trim();
-        if (coupon === 'couple20' || coupon === 'couple15') {
+        if (coupon === 'couple 20' || coupon === 'NEW15') {
             selectedCoupleDiscount = coupon;
             applyCouponButton.disabled = true;
             couponInput.disabled = true;
             updateDiscountedPrice();
         } else {
-            alert('Invalid coupon code!');
+            alert('Invalid coupon code! Please enter a valid coupon code');
         }
     });
 });
